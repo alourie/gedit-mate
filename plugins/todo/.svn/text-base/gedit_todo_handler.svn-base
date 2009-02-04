@@ -1,5 +1,0 @@
-#!/usr/bin/ruby
-
-path = ARGV[0]
-match, file, line_number = *path.to_s.match(/^gedit:\/\/(.*?)\?line=(.*?)$/)
-system("gedit #{file} +#{line_number}")
