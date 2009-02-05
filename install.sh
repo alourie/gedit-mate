@@ -38,3 +38,11 @@ then
 mkdir -p ~/.gnome2/gedit/styles
 fi
 cp styles/* ~/.gnome2/gedit/styles
+
+# Copy Fonts
+# Copy Snippets
+if [ ! -d $HOME/.fonts ]
+then
+mkdir -p ~/.fonts
+fi
+cp fonts/* ~/.fonts
